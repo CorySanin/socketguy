@@ -1,0 +1,31 @@
+{
+  "name": "socketguy",
+  "version": "1.0.0",
+  "description": "udp interface for Mixer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CorySanin/socketguy.git"
+  },
+  "keywords": [
+    "UDP",
+    "Mixer",
+    "MixPlay"
+  ],
+  "author": "Cory Sanin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CorySanin/socketguy/issues"
+  },
+  "homepage": "https://github.com/CorySanin/socketguy#readme",
+  "dependencies": {
+    "@mixer/interactive-node": "3.0.1",
+    "@mixer/shortcode-oauth": "1.1.0",
+    "open": "7.0.0",
+    "ws": "7.1.2",
+    "udp-broadcast": "0.0.1"
+  }
+}
