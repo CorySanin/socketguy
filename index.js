@@ -116,11 +116,10 @@ fs.readFile(configfile, 'utf8', function (err, data) {
             config = JSON.parse(data);
             server = new UdpBroadcast(config);
             server.on('message', (m) => {
-                try{
-                    let j = JSON.parse(m);
-                    if('scene' in j){
-                        currentScene = j.scene;
-                        if(defaultGroup){
+                try {
+                    if ('scene' in m) {
+                        currentScene = m.scene;
+                        if (defaultGroup) {
                             defaultGroup.sceneID = currentScene;
                             client.updateGroups({
                                 groups: [defaultGroup]
@@ -129,7 +128,9 @@ fs.readFile(configfile, 'utf8', function (err, data) {
                     }
                 }
                 catch{
-                    console.log(m);
+                    if (m) {
+                        console.log(m);
+                    }
                 }
             });
             server.open();
