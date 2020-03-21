@@ -16,7 +16,7 @@
     "MixPlay"
   ],
   "author": "Cory Sanin",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/CorySanin/socketguy/issues"
   },
