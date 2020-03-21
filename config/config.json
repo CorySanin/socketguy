@@ -1,0 +1,6 @@
+{
+    "auto-open-browser": true,
+    "port": 3616,
+    "host": "0.0.0.0",
+    "overlay-port": 8080
+}

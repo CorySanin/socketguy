@@ -1,0 +1,682 @@
+{
+    "scenes": [
+        {
+            "sceneID": "default",
+            "controls": [
+                {
+                    "kind": "button",
+                    "controlID": "pswitch",
+                    "position": [
+                        {
+                            "size": "small",
+                            "width": 9,
+                            "height": 4,
+                            "x": 0,
+                            "y": 36
+                        },
+                        {
+                            "size": "medium",
+                            "width": 9,
+                            "height": 4,
+                            "x": 0,
+                            "y": 21
+                        },
+                        {
+                            "size": "large",
+                            "width": 9,
+                            "height": 4,
+                            "x": 0,
+                            "y": 16
+                        }
+                    ],
+                    "text": "P switch",
+                    "cost": 10,
+                    "meta": {
+                        "num": {
+                            "value": -1
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "1",
+                    "position": [
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "cost": 15,
+                    "meta": {
+                        "num1": {
+                            "value": ""
+                        }
+                    },
+                    "text": "Mushroom"
+                },
+                {
+                    "kind": "button",
+                    "controlID": "2",
+                    "position": [
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 6,
+                            "y": 0
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 6,
+                            "y": 0
+                        },
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 6,
+                            "y": 0
+                        }
+                    ],
+                    "cost": 15,
+                    "text": "Flower",
+                    "meta": {
+                        "num": {
+                            "value": 2
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "3",
+                    "position": [
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 12,
+                            "y": 0
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 12,
+                            "y": 0
+                        },
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 12,
+                            "y": 0
+                        }
+                    ],
+                    "text": "Leaf",
+                    "cost": 10,
+                    "meta": {
+                        "num": {
+                            "value": 3
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "4",
+                    "position": [
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 18,
+                            "y": 0
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 18,
+                            "y": 0
+                        },
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 18,
+                            "y": 0
+                        }
+                    ],
+                    "text": "Frog",
+                    "cost": 20,
+                    "meta": {
+                        "num": {
+                            "value": "4"
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "5",
+                    "position": [
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 24,
+                            "y": 0
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 24,
+                            "y": 0
+                        },
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 24,
+                            "y": 0
+                        }
+                    ],
+                    "text": "Tanooki",
+                    "cost": 10,
+                    "meta": {
+                        "num": {
+                            "value": 5
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "6",
+                    "position": [
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 0,
+                            "y": 4
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 30,
+                            "y": 0
+                        },
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 30,
+                            "y": 0
+                        }
+                    ],
+                    "text": "Hammer",
+                    "cost": 15,
+                    "meta": {
+                        "num": {
+                            "value": 6
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "7",
+                    "position": [
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 36,
+                            "y": 0
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 36,
+                            "y": 0
+                        }
+                    ],
+                    "text": "Mushroom",
+                    "cost": 10,
+                    "meta": {
+                        "num": {
+                            "value": 7
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "8",
+                    "position": [
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 42,
+                            "y": 0
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 0,
+                            "y": 4
+                        },
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 6,
+                            "y": 4
+                        }
+                    ],
+                    "text": "Flower",
+                    "cost": 10,
+                    "meta": {
+                        "num": {
+                            "value": 8
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "9",
+                    "position": [
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 12,
+                            "y": 4
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 6,
+                            "y": 4
+                        },
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 48,
+                            "y": 0
+                        }
+                    ],
+                    "text": "Leaf",
+                    "cost": 5,
+                    "meta": {
+                        "num": {
+                            "value": 9
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "10",
+                    "position": [
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 54,
+                            "y": 0
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 12,
+                            "y": 4
+                        },
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 18,
+                            "y": 4
+                        }
+                    ],
+                    "text": "Frog",
+                    "cost": 15,
+                    "meta": {
+                        "num": {
+                            "value": 10
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "11",
+                    "position": [
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 60,
+                            "y": 0
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 18,
+                            "y": 4
+                        },
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 24,
+                            "y": 4
+                        }
+                    ],
+                    "text": "Tanooki",
+                    "cost": 5,
+                    "meta": {
+                        "num": {
+                            "value": 11
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "12",
+                    "position": [
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 0,
+                            "y": 8
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 24,
+                            "y": 4
+                        },
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 66,
+                            "y": 0
+                        }
+                    ],
+                    "text": "Hammer",
+                    "cost": 10,
+                    "meta": {
+                        "num": {
+                            "value": 12
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "13",
+                    "position": [
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 72,
+                            "y": 0
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 30,
+                            "y": 4
+                        },
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 6,
+                            "y": 8
+                        }
+                    ],
+                    "text": "Cloud",
+                    "cost": 10,
+                    "meta": {
+                        "num": {
+                            "value": 13
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "14",
+                    "position": [
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 12,
+                            "y": 8
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 36,
+                            "y": 4
+                        },
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 0,
+                            "y": 4
+                        }
+                    ],
+                    "text": "P-Wing",
+                    "cost": 5,
+                    "meta": {
+                        "num": {
+                            "value": 14
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "15",
+                    "position": [
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 18,
+                            "y": 8
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 0,
+                            "y": 8
+                        },
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 6,
+                            "y": 4
+                        }
+                    ],
+                    "text": "Star",
+                    "cost": 5,
+                    "meta": {
+                        "num": {
+                            "value": 15
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "16",
+                    "position": [
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 24,
+                            "y": 8
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 6,
+                            "y": 8
+                        },
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 12,
+                            "y": 4
+                        }
+                    ],
+                    "text": "Anchor",
+                    "cost": 10,
+                    "meta": {
+                        "num": {
+                            "value": 16
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "17",
+                    "position": [
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 0,
+                            "y": 12
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 12,
+                            "y": 8
+                        },
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 18,
+                            "y": 4
+                        }
+                    ],
+                    "text": "Bush Hammer",
+                    "cost": 20,
+                    "meta": {
+                        "num": {
+                            "value": 17
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "18",
+                    "position": [
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 6,
+                            "y": 12
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 18,
+                            "y": 8
+                        },
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 24,
+                            "y": 4
+                        }
+                    ],
+                    "text": "Warp",
+                    "cost": 100,
+                    "meta": {
+                        "num": {
+                            "value": 18
+                        }
+                    }
+                },
+                {
+                    "kind": "button",
+                    "controlID": "19",
+                    "position": [
+                        {
+                            "size": "small",
+                            "width": 6,
+                            "height": 4,
+                            "x": 12,
+                            "y": 12
+                        },
+                        {
+                            "size": "medium",
+                            "width": 6,
+                            "height": 4,
+                            "x": 24,
+                            "y": 8
+                        },
+                        {
+                            "size": "large",
+                            "width": 6,
+                            "height": 4,
+                            "x": 30,
+                            "y": 4
+                        }
+                    ],
+                    "text": "Music Box",
+                    "cost": 15,
+                    "meta": {
+                        "num": {
+                            "value": 19
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

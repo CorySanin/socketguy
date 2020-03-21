@@ -21,10 +21,6 @@ function handleControls(controls) {
     controls.forEach((control) => {
         if (control.kind === 'button') {
             control.on('mousedown', (inputEvent, participant) => {
-
-                // Let's tell the user who they are, and what they pushed.
-                console.log(`${participant.username} pushed ${inputEvent.input.controlID}`);
-
                 server.send({
                     participant: participant.username,
                     control: control.controlID,
@@ -36,7 +32,6 @@ function handleControls(controls) {
         }
         else if (control.kind === 'textbox') {
             control.on('submit', (inputEvent, participant) => {
-                console.log(`${participant.username} typed ${inputEvent.input.value} in ${inputEvent.input.controlID}`);
                 server.send({
                     participant: participant.username,
                     control: control.controlID,
@@ -139,7 +134,6 @@ fs.readFile(configfile, 'utf8', function (err, data) {
                 layoutfile = process.argv[2];
             }
             attempt().then(tokens => {
-                //console.log(`Token data`, tokens.data)
                 client.open({
                     authToken: tokens.data.accessToken,
                     versionId: USELESSCODE,
