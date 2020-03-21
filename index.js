@@ -5,6 +5,7 @@ const open = require('open');
 const UdpBroadcast = require('udp-broadcast').server;
 const interactive = require('@mixer/interactive-node');
 const { ShortCodeExpireError, OAuthClient } = require('@mixer/shortcode-oauth');
+const AlertOverlay = require('./alert-overlay');
 
 const configfile = path.join(__dirname, 'config/config.json');
 const USELESSCODE = 420030;
@@ -14,7 +15,7 @@ interactive.setWebSocket(ws);
 
 let layoutfile = path.join(__dirname, 'layout/default.json');
 let currentScene = 'default';
-let server, config, defaultGroup;
+let server, config, defaultGroup, alertoverlay;
 
 function handleControls(controls) {
     controls.forEach((control) => {
@@ -24,21 +25,12 @@ function handleControls(controls) {
                 // Let's tell the user who they are, and what they pushed.
                 console.log(`${participant.username} pushed ${inputEvent.input.controlID}`);
 
-                // Did this push involve a spark cost?
-                if (inputEvent.transactionID) {
-
-                    // Unless you capture the transaction the sparks are not deducted.
-                    client.captureTransaction(inputEvent.transactionID)
-                        .then(() => {
-                            console.log(`Charged ${participant.username} ${control.cost} sparks!`);
-                        });
-                }
-
                 server.send({
                     participant: participant.username,
                     control: control.controlID,
                     type: control.kind,
-                    meta: control.meta
+                    meta: control.meta,
+                    transactionID: (inputEvent.transactionID ? inputEvent.transactionID : null)
                 });
             });
         }
@@ -114,16 +106,25 @@ fs.readFile(configfile, 'utf8', function (err, data) {
     if (!err) {
         try {
             config = JSON.parse(data);
+            alertoverlay = new AlertOverlay(config);
             server = new UdpBroadcast(config);
             server.on('message', (m) => {
                 try {
-                    if ('scene' in m) {
-                        currentScene = m.scene;
-                        if (defaultGroup) {
-                            defaultGroup.sceneID = currentScene;
-                            client.updateGroups({
-                                groups: [defaultGroup]
-                            })
+                    if (typeof m === 'object') {
+                        if ('scene' in m) {
+                            currentScene = m.scene;
+                            if (defaultGroup) {
+                                defaultGroup.sceneID = currentScene;
+                                client.updateGroups({
+                                    groups: [defaultGroup]
+                                })
+                            }
+                        }
+                        if ('text' in m) {
+                            alertoverlay.notify(m);
+                            if ('transactionID' in m) {
+                                client.captureTransaction(m.transactionID);
+                            }
                         }
                     }
                 }
